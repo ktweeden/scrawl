@@ -18,9 +18,9 @@
 }
 
 .time-to-read {
-  width: 25%;
+  width: 20%;
   order: 2;
-  background-color: $tertiary-colour;
+  background-color: inherit;
   margin-right: $medium-padding;
 
   h2 {
@@ -33,7 +33,7 @@
   order: 4;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
+  justify-content: flex-end;
   padding-top: $medium-padding;
 
   .tag {

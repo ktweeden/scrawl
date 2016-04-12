@@ -1,0 +1,12 @@
+<nav class="pagination" role="pagination">
+  <div class="wrapper">
+    {{#if next}}
+        <a href="{{page_url next}}" class="older-posts">Older</a>
+    {{/if}}
+  </div>
+  <div class="wrapper">
+    {{#if prev}}
+        <a href="{{page_url prev}}" class="newer-posts">Newer</a>
+    {{/if}}
+  </div>
+</nav>
