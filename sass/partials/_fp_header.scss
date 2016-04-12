@@ -3,7 +3,7 @@
   width: 100%;
 
   h1 {
-    padding: 0.2em;
+    padding: $medium-padding $small-padding;
     font-size: 3.5em;
   }
 }
@@ -12,11 +12,14 @@
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
+  padding-bottom: $small-padding;
 
   a {
     width: 50%;
+    padding: $small-padding;
     text-align: center;
-    font-size: 1.8em;
-    padding: 0.2em;
+    font-size: 2em;
+    color: $background-colour;
+    background-color: $secondary-colour;
   }
 }

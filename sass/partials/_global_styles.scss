@@ -3,17 +3,26 @@
 **/
 
 /* Colours */
-$primary-colour: #FF4B3E;
+$primary-colour: #FFBF00;
 $secondary-colour: #254E70;
-$tertiary-colour: #FFBF00;
+$tertiary-colour: #FF4B3E;
 $font-colour: #011627;
 $background-colour: #EFEFEF;
+
+/*Padding*/
+$small-padding: 0.2em;
+$medium-padding: 0.7em;
+$large-padding: 1em;
 
 
 
 /**
   TAGS
 **/
+
+* {
+  box-sizing: border-box;
+}
 
 html, body {
   margin: 0;
@@ -43,14 +52,14 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   margin: 0;
   padding: 0;
   border: 0;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 0;
   padding: 0;
   border: 0;

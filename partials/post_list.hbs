@@ -1,14 +1,19 @@
 {{#foreach posts}}
-<div class="post-exerpt">
+<a href="{{url}}"><article class="post-exerpt">
   <div class="time-to-read">
   </div>
   <h2 class="exerpt-title">
     {{title}}
   </h2>
-  <div class="exerpt-date">
+  <time class="exerpt-date" datetime="{{date format='YYYY-MM-DD'}}">
     {{date format="YYYY MMM DD"}}
-  </div>
+  </time>
+  {{#if tags}}
   <div class="top-tags">
+    {{#foreach tags limit="3"}}
+      <div class="tag">{{name}}</div>
+    {{/foreach}}
   </div>
-</div>
+  {{/if}}
+</article></a>
 {{/foreach}}
