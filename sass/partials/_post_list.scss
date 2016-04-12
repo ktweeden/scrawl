@@ -1,0 +1,37 @@
+.post-exerpt {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  .exerpt-title {
+    width: 66%;
+    order: 2;
+  }
+
+  .exerpt-date {
+    width: 100%;
+    order: 3;
+    text-align: right;
+  }
+}
+
+.time-to-read {
+  width: 33%;
+  order: 1;
+  background: $secondary-colour;
+
+}
+
+.top-tags {
+  width: 100%;
+  order: 4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .tag {
+    text-transform: uppercase;
+    border-width: 1px;
+    padding: 0.2em;
+  }
+}
