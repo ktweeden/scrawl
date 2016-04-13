@@ -1,9 +1,17 @@
+.tag-title {
+  text-transform: uppercase;
+  padding: $medium-padding;
+  text-align: left;
+  color: $secondary-colour;
+}
+
 .post-exerpt {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   padding: $medium-padding;
   align-items: center;
+  margin-bottom: $large-padding;
 
   .exerpt-title {
     flex: 1;
@@ -42,7 +50,7 @@
 
       h1 {
         color: $tertiary-colour;
-        font-size: 2.5em;
+        font-size: $large-header;
         order: 1;
       }
 

@@ -4,7 +4,6 @@
 
   h1 {
     padding: $medium-padding $small-padding;
-    font-size: 3.5em;
     background-color: inherit;
   }
 }
@@ -19,7 +18,7 @@
     width: 50%;
     padding: $small-padding;
     text-align: center;
-    font-size: 2em;
+    font-size: $medium-header;
     color: $primary-colour;
     background-color: $secondary-colour;
   }

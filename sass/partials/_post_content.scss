@@ -1,0 +1,35 @@
+.content-wrapper {
+  padding: $medium-padding;
+
+  a {
+    text-decoration: underline;
+    border-bottom: 1px solid $primary-colour;
+    text-decoration: none;
+    color: $primary-colour
+  }
+
+  blockquote {
+    margin: 1em 0;
+    padding-left: $small-padding;
+    border-left: $small-padding solid $tertiary-colour;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    margin: $medium-padding 0;
+  }
+
+    li {
+      list-style-type: circle;
+    }
+
+  mark {
+    background-color: $tertiary-colour;
+  }
+
+  del {
+    color: $primary-colour;
+  }
+
+}

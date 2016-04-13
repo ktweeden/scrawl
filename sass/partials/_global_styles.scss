@@ -14,6 +14,11 @@ $small-padding: 0.2em;
 $medium-padding: 0.7em;
 $large-padding: 1em;
 
+/*Font sizes*/
+$biggest-header: 3em;
+$large-header: 2.5em;
+$medium-header: 2em;
+$small-header: 1.5em;
 
 
 /**
@@ -41,7 +46,7 @@ a {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: $large-header;
   color: $font-colour;
   margin: 0;
   padding: 0;
@@ -52,14 +57,14 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: $medium-header;
   margin: 0;
   padding: 0;
   border: 0;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: $small-header;
   margin: 0;
   padding: 0;
   border: 0;

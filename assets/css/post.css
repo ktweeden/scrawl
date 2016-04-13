@@ -3,6 +3,7 @@
 **/
 /* Colours */
 /*Padding*/
+/*Font sizes*/
 /**
   TAGS
 **/
@@ -23,7 +24,7 @@ a {
   color: inherit; }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   color: #011627;
   margin: 0;
   padding: 0;
@@ -43,5 +44,97 @@ h3 {
   margin: 0;
   padding: 0;
   border: 0; }
+
+.blog-title-background {
+  background-color: #FFBF00;
+  width: 100%; }
+  .blog-title-background h1 {
+    padding: 0.2em;
+    font-size: 1.5em;
+    background-color: inherit;
+    text-align: center; }
+
+h2 {
+  padding: 0.7em 0.2em;
+  font-size: 2.5em;
+  color: #254E70;
+  background-color: inherit;
+  text-align: center;
+  width: 100%; }
+
+.authorship {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0.2em 0.7em; }
+  .authorship .author-pic {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    order: 1; }
+  .authorship .name-date {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    padding-left: 0.7em; }
+    .authorship .name-date .author-name {
+      order: 1;
+      padding-left: 0.2em;
+      color: #FF4B3E; }
+    .authorship .name-date .post-date {
+      order: 2; }
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.2em; }
+  .tag-container .tag {
+    text-transform: uppercase;
+    padding: 0.2em;
+    margin: 0.2em;
+    text-align: center;
+    color: #FF4B3E;
+    border: 1px solid #FF4B3E; }
+
+.footer-container {
+  background-color: #254E70;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .footer-container .social-button {
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FFBF00;
+    background-color: inherit;
+    font-size: 2em;
+    color: #FFBF00;
+    padding: 0.2em;
+    margin: 0.2em; }
+
+.content-wrapper {
+  padding: 0.7em; }
+  .content-wrapper a {
+    text-decoration: underline;
+    border-bottom: 1px solid #FFBF00;
+    text-decoration: none;
+    color: #FFBF00; }
+  .content-wrapper blockquote {
+    margin: 1em 0;
+    padding-left: 0.2em;
+    border-left: 0.2em solid #FF4B3E; }
+  .content-wrapper img {
+    width: 100%;
+    height: 100%;
+    margin: 0.7em 0; }
+  .content-wrapper li {
+    list-style-type: circle; }
+  .content-wrapper mark {
+    background-color: #FF4B3E; }
+  .content-wrapper del {
+    color: #FFBF00; }
 
 /*# sourceMappingURL=post.css.map */

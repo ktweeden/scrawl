@@ -1,0 +1,14 @@
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: $small-padding;
+
+  .tag {
+    text-transform: uppercase;
+    padding: $small-padding;
+    margin: $small-padding;
+    text-align: center;
+    color: $tertiary-colour;
+    border: 1px solid $tertiary-colour;
+  }
+}

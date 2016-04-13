@@ -1,0 +1,53 @@
+.blog-title-background {
+  background-color: $primary-colour;
+  width: 100%;
+
+  h1 {
+    padding: $small-padding;
+    font-size: $small-header;
+    background-color: inherit;
+    text-align: center;
+  }
+}
+
+  h2 {
+    padding: $medium-padding $small-padding;
+    font-size: $large-header;
+    color: $secondary-colour;
+    background-color: inherit;
+    text-align: center;
+    width: 100%;
+  }
+
+.authorship {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: $small-padding $medium-padding;
+
+  .author-pic {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    order: 1;
+  }
+
+  .name-date {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    padding-left: $medium-padding;
+
+    .author-name {
+      order: 1;
+      padding-left: $small-padding;
+      color: $tertiary-colour;
+
+    }
+
+    .post-date {
+      order: 2;
+    }
+  }
+}

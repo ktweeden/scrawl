@@ -1,3 +1,8 @@
+{{#is "tag"}}
+  {{#tag}}
+    <div class="tag-title">Posts tagged "{{name}}"</div>
+  {{/tag}}
+{{/is}}
 {{#foreach posts}}
 <a href="{{url}}">
   <article class="post-exerpt">
@@ -7,7 +12,7 @@
       </time>
       <div class="time-to-read">
         <div class="content-string">
-          {{content}}
+          {{excerpt words="5000"}}
         </div>
       </div>
     </div>
