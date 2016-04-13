@@ -2,6 +2,10 @@
   VARIABLES
 **/
 
+/* Breakpoints */
+$phone-layout-max: 550px;
+$tablet-layout-max: 900px;
+
 /* Colours */
 $primary-colour: #FFBF00;
 $secondary-colour: #254E70;
@@ -9,13 +13,13 @@ $tertiary-colour: #FF4B3E;
 $font-colour: #011627;
 $background-colour: #EFEFEF;
 
-/*Padding*/
+/* Padding */
 $small-padding: 0.2em;
 $medium-padding: 0.7em;
 $large-padding: 1em;
 
-/*Font sizes*/
-$biggest-header: 3em;
+/* Font sizes */
+$biggest-header: 3.5em;
 $large-header: 2.5em;
 $medium-header: 2em;
 $small-header: 1.5em;
@@ -68,4 +72,22 @@ h3 {
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+/**
+  MIXINS
+**/
+
+@mixin media-query-phone {
+  @media screen and (max-width: #{$phone-layout-max})
+  {
+    @content;
+  }
+}
+
+@mixin media-query-tablet {
+  @media screen and (max-width: #{$tablet-layout-max})
+  {
+    @content;
+  }
 }

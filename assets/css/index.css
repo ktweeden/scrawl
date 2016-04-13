@@ -1,9 +1,10 @@
 /**
   VARIABLES
 **/
+/* Breakpoints */
 /* Colours */
-/*Padding*/
-/*Font sizes*/
+/* Padding */
+/* Font sizes */
 /**
   TAGS
 **/
@@ -45,25 +46,31 @@ h3 {
   padding: 0;
   border: 0; }
 
+/**
+  MIXINS
+**/
 .blog-title-background {
   background-color: #FFBF00;
   width: 100%; }
   .blog-title-background h1 {
     padding: 0.7em 0.2em;
-    background-color: inherit; }
+    background-color: inherit;
+    font-size: 3.5em;
+    margin-bottom: 0.2em; }
 
 .navigation-container {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
   padding-bottom: 0.2em; }
-  .navigation-container a {
+  .navigation-container li {
     width: 50%;
     padding: 0.2em;
     text-align: center;
-    font-size: 2em;
-    color: #FFBF00;
-    background-color: #254E70; }
+    font-size: 1.5em;
+    color: #254E70;
+    list-style-type: none;
+    margin: 0.2em; }
 
 .tag-title {
   text-transform: uppercase;
@@ -149,9 +156,13 @@ h3 {
       color: #FF4B3E;
       text-transform: uppercase;
       font-size: 1.5em;
-      border: 2px solid #FF4B3E;
-      padding: 0.2em;
-      text-align: center; }
+      padding-bottom: 0.7em; }
+      .pagination .wrapper a.older-posts {
+        text-align: left;
+        padding-left: 0.7em; }
+      .pagination .wrapper a.newer-posts {
+        text-align: right;
+        padding-right: 0.7em; }
 
 .footer-container {
   background-color: #254E70;

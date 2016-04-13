@@ -5,6 +5,8 @@
   h1 {
     padding: $medium-padding $small-padding;
     background-color: inherit;
+    font-size: $biggest-header;
+    margin-bottom: $small-padding;
   }
 }
 
@@ -14,12 +16,13 @@
   flex-wrap: nowrap;
   padding-bottom: $small-padding;
 
-  a {
+  li {
     width: 50%;
     padding: $small-padding;
     text-align: center;
-    font-size: $medium-header;
-    color: $primary-colour;
-    background-color: $secondary-colour;
+    font-size: $small-header;
+    color: $secondary-colour;
+    list-style-type: none;
+    margin: $small-padding;
   }
 }

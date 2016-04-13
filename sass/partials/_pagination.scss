@@ -16,9 +16,17 @@
       color: $tertiary-colour;
       text-transform: uppercase;
       font-size: 1.5em;
-      border: 2px solid $tertiary-colour;
-      padding: $small-padding;
-      text-align: center;
+      padding-bottom: $medium-padding;
+
+      &.older-posts {
+        text-align: left;
+        padding-left: $medium-padding;
+      }
+
+      &.newer-posts {
+        text-align: right;
+        padding-right: $medium-padding;
+      }
     }
   }
 

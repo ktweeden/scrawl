@@ -1,9 +1,10 @@
 /**
   VARIABLES
 **/
+/* Breakpoints */
 /* Colours */
-/*Padding*/
-/*Font sizes*/
+/* Padding */
+/* Font sizes */
 /**
   TAGS
 **/
@@ -45,6 +46,9 @@ h3 {
   padding: 0;
   border: 0; }
 
+/**
+  MIXINS
+**/
 .blog-title-background {
   background-color: #FFBF00;
   width: 100%; }
