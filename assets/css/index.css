@@ -16,7 +16,7 @@ html, body {
   border: 0;
   width: 100%;
   height: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   background-color: #EFEFEF; }
 
 a {
@@ -29,7 +29,7 @@ h1 {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Permanent Marker', Impact, Charcoal, sans-serif;
   font-weight: 300;
   text-align: center; }
 
@@ -157,7 +157,8 @@ h3 {
   background-color: #254E70;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  align-self: flex-end; }
   .footer-container .social-button {
     height: 48px;
     width: 48px;
@@ -170,5 +171,24 @@ h3 {
     color: #FFBF00;
     padding: 0.2em;
     margin: 0.2em; }
+
+.full-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+  .full-content-wrapper .header-wrapper {
+    order: 1;
+    width: 100%; }
+  .full-content-wrapper .index-list-wrapper {
+    order: 2;
+    width: 100%;
+    flex-grow: 1; }
+  .full-content-wrapper .pagination-wrapper {
+    order: 3;
+    width: 100%; }
+  .full-content-wrapper .footer-wrapper {
+    order: 4;
+    width: 100%;
+    align-self: flex-end; }
 
 /*# sourceMappingURL=index.css.map */

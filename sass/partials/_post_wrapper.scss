@@ -1,0 +1,22 @@
+.full-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .header-wrapper {
+    order: 1;
+    width: 100%;
+  }
+
+  .tag-wrapper {
+    order: 3;
+    width: 100%;
+  }
+
+  .footer-wrapper {
+    order: 4;
+    width: 100%;
+    align-self: flex-end;
+  }
+
+}

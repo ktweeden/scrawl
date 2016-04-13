@@ -1,5 +1,7 @@
 .content-wrapper {
   padding: $medium-padding;
+  order: 2;
+  flex-grow: 1;
 
   a {
     text-decoration: underline;

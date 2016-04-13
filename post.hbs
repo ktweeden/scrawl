@@ -1,7 +1,17 @@
 {{!< default}}
   {{#post}}
-    {{>post_header}}
-    <div class="content-wrapper">{{content}}</div>
+  <div class="full-content-wrapper">
+    <div class="header-wrapper">
+      {{>post_header}}
+    </div>
+    <div class="content-wrapper">
+      {{content}}
+    </div>
+    <div class="tag-wrapper">
     {{>post_tags}}
-    {{>footer}}
+    </div>
+    <div class="footer-wrapper">
+      {{>footer}}
+    </div>
+  </div>
   {{/post}}
