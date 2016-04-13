@@ -1,14 +1,17 @@
 {{#foreach posts}}
 <a href="{{url}}">
   <article class="post-exerpt">
+    <time class="exerpt-date" datetime="{{date format='YYYY-MM-DD'}}">
+      {{date format="YYYY MMM DD"}}
+    </time>
     <div class="time-to-read">
+      <div class="content-string">
+        {{content}}
+      </div>
     </div>
     <h2 class="exerpt-title">
       {{title}}
     </h2>
-    <time class="exerpt-date" datetime="{{date format='YYYY-MM-DD'}}">
-      {{date format="YYYY MMM DD"}}
-    </time>
     {{#if tags}}
     <div class="top-tags">
       {{#foreach tags limit="3"}}

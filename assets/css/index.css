@@ -28,7 +28,7 @@ h1 {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Permanent Marker', cursive;
   font-weight: 300;
   text-align: center; }
 
@@ -72,7 +72,9 @@ h3 {
   padding: 0.7em; }
   .post-exerpt .exerpt-title {
     width: 70%;
-    order: 3; }
+    order: 3;
+    display: flex;
+    align-items: center; }
   .post-exerpt .exerpt-date {
     width: 100%;
     order: 1;
@@ -80,30 +82,43 @@ h3 {
     padding-bottom: 0.7em; }
 
 .time-to-read {
-  width: 20%;
+  width: 25%;
   order: 2;
   background-color: inherit;
-  margin-right: 0.7em; }
-  .time-to-read h2 {
-    color: #254E70; }
+  margin-right: 0.7em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #FF4B3E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2em; }
+  .time-to-read h1 {
+    color: #FF4B3E;
+    font-size: 2.5em;
+    order: 1; }
+  .time-to-read div {
+    order: 1;
+    text-align: center; }
+  .time-to-read .content-string {
+    display: none; }
 
 .top-tags {
   width: 100%;
   order: 4;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding-top: 0.7em; }
   .top-tags .tag {
     text-transform: uppercase;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #FF4B3E;
     padding: 0.2em;
-    margin-right: 0.2em;
+    margin-right: 0.7em;
     margin-bottom: 0.2em;
     text-align: center;
-    color: #FF4B3E; }
+    color: #254E70;
+    border-bottom: 1px solid #254E70; }
 
 .pagination {
   width: 100%;
