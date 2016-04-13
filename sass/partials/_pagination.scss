@@ -4,20 +4,22 @@
   flex-wrap: nowrap;
   flex-direction: row;
 
-
   .wrapper {
     width: 50%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    padding-bottom: $small-padding;
 
     a {
       width: 100%;
-      padding: $small-padding;
+      color: $tertiary-colour;
+      text-transform: uppercase;
+      font-size: 1.5em;
+      border: 2px solid $tertiary-colour;
+      margin: small-padding;
+      padding: small-padding;
       text-align: center;
-      font-size: 2em;
-      color: $background-colour;
-      background-color: $secondary-colour;
     }
   }
 

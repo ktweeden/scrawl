@@ -1,0 +1,21 @@
+.footer-container {
+  background-color: $secondary-colour;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .social-button {
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $primary-colour;
+    background-color: inherit;
+    font-size: 2em;
+    color: $primary-colour;
+    padding: $small-padding;
+    margin: $small-padding;
+  }
+
+}

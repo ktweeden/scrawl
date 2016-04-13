@@ -3,67 +3,76 @@
   display: flex;
   flex-wrap: wrap;
   padding: $medium-padding;
+  align-items: center;
 
   .exerpt-title {
-    width: 70%;
-    order: 3;
+    flex: 1;
+    order: 2;
     display: flex;
     align-items: center;
   }
 
-  .exerpt-date {
-    width: 100%;
+  .date-time {
     order: 1;
-    text-align: left;
-    padding-bottom: $medium-padding;
-  }
-}
-
-.time-to-read {
-  width: 25%;
-  order: 2;
-  background-color: inherit;
-  margin-right: $medium-padding;
-  border-width: 2px;
-  border-style: solid;
-  border-color: $tertiary-colour;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: $small-padding;
-
-  h1 {
-    color: $tertiary-colour;
-    font-size: 2.5em;
-    order: 1;
-  }
-
-  div {
-    order: 1;
-    text-align: center;
-  }
-
-  .content-string {
-    display: none;
-  }
-}
-
-.top-tags {
-  width: 100%;
-  order: 4;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  padding-top: $medium-padding;
-
-  .tag {
-    text-transform: uppercase;
-    padding: $small-padding;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     margin-right: $medium-padding;
-    margin-bottom: $small-padding;
-    text-align: center;
-    color: $secondary-colour;
-    border-bottom: 1px solid $secondary-colour;
+
+    .exerpt-date {
+      width: 100%;
+      order: 1;
+      padding-bottom: $small-padding;
+      text-align: center;
+    }
+    .time-to-read {
+      width: 90px;
+      height: 90px;
+      order: 2;
+      background-color: inherit;
+      border-width: 2px;
+      border-style: solid;
+      border-color: $tertiary-colour;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: $small-padding;
+
+      h1 {
+        color: $tertiary-colour;
+        font-size: 2.5em;
+        order: 1;
+      }
+
+      div {
+        order: 1;
+        text-align: center;
+      }
+
+      .content-string {
+        display: none;
+      }
+    }
+  }
+
+  .top-tags {
+    width: 100%;
+    order: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: $medium-padding;
+
+    .tag {
+      text-transform: uppercase;
+      padding: $small-padding;
+      margin-right: $medium-padding;
+      margin-bottom: $small-padding;
+      text-align: center;
+      color: $secondary-colour;
+      border-bottom: 1px solid $secondary-colour;
+    }
   }
 }
