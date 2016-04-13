@@ -31,8 +31,7 @@ h1 {
   padding: 0;
   border: 0;
   font-family: 'Permanent Marker', Impact, Charcoal, sans-serif;
-  font-weight: 300;
-  text-align: center; }
+  font-weight: 300; }
 
 h2 {
   font-size: 2em;
@@ -49,6 +48,19 @@ h3 {
 /**
   MIXINS
 **/
+.navigation-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 0.2em; }
+  .navigation-container li {
+    width: 50%;
+    padding: 0.2em;
+    text-align: center;
+    color: #254E70;
+    list-style-type: none;
+    margin: 0.2em; }
+
 .blog-title-background {
   background-color: #FFBF00;
   width: 100%; }
@@ -58,7 +70,7 @@ h3 {
     background-color: inherit;
     text-align: center; }
 
-h2 {
+.post-title-background h2 {
   padding: 0.7em 0.2em;
   font-size: 2.5em;
   color: #254E70;
@@ -92,7 +104,7 @@ h2 {
 .tag-container {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 0.2em; }
+  margin: 0.7em 0.7em; }
   .tag-container .tag {
     text-transform: uppercase;
     padding: 0.2em;
@@ -121,9 +133,12 @@ h2 {
     margin: 0.2em; }
 
 .content-wrapper {
-  padding: 0.7em;
   order: 2;
-  flex-grow: 1; }
+  flex-grow: 1;
+  padding: 0.2em 0.7em; }
+  .content-wrapper h1, .content-wrapper h2, .content-wrapper h3, .content-wrapper h4 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #254E70; }
   .content-wrapper a {
     text-decoration: underline;
     border-bottom: 1px solid #FFBF00;
@@ -143,6 +158,8 @@ h2 {
     background-color: #FF4B3E; }
   .content-wrapper del {
     color: #FFBF00; }
+  .content-wrapper hr {
+    border-top: 2px solid #FF4B3E; }
 
 .full-content-wrapper {
   display: flex;

@@ -57,7 +57,6 @@ h1 {
   border: 0;
   font-family: 'Permanent Marker', Impact, Charcoal, sans-serif;
   font-weight: 300;
-  text-align: center;
 }
 
 h2 {
@@ -78,14 +77,14 @@ h3 {
   MIXINS
 **/
 
-@mixin media-query-phone {
+@mixin mq-phone {
   @media screen and (max-width: #{$phone-layout-max})
   {
     @content;
   }
 }
 
-@mixin media-query-tablet {
+@mixin mq-tablet {
   @media screen and (max-width: #{$tablet-layout-max})
   {
     @content;

@@ -1,7 +1,12 @@
 .content-wrapper {
-  padding: $medium-padding;
   order: 2;
   flex-grow: 1;
+  padding: $small-padding $medium-padding;
+
+  h1, h2, h3, h4 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: $secondary-colour;
+  }
 
   a {
     text-decoration: underline;
@@ -32,6 +37,10 @@
 
   del {
     color: $primary-colour;
+  }
+
+  hr {
+    border-top:2px solid $tertiary-colour;
   }
 
 }

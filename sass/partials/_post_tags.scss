@@ -1,7 +1,7 @@
 .tag-container {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: $small-padding;
+  margin: $medium-padding $medium-padding;
 
   .tag {
     text-transform: uppercase;
