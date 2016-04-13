@@ -85,7 +85,7 @@ h3 {
 }
 
 @mixin mq-tablet {
-  @media screen and (max-width: #{$tablet-layout-max})
+  @media screen and (min-width: #{$phone-layout-max+1px}) and (max-width: #{$tablet-layout-max})
   {
     @content;
   }

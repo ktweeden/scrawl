@@ -50,13 +50,21 @@ h3 {
 **/
 .blog-title-background {
   background-color: #FFBF00;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
   .blog-title-background h1 {
     padding: 0.7em 0.2em;
     background-color: inherit;
-    font-size: 3.5em;
     margin-bottom: 0.2em;
-    text-align: center; }
+    text-align: center;
+    order: 1; }
+    @media screen and (max-width: 550px) {
+      .blog-title-background h1 {
+        font-size: 3.5em; } }
+    @media screen and (min-width: 551px) and (max-width: 900px) {
+      .blog-title-background h1 {
+        font-size: 4em; } }
 
 .navigation-container {
   width: 100%;
@@ -78,34 +86,86 @@ h3 {
   text-align: left;
   color: #254E70; }
 
-.post-exerpt {
-  width: 100%;
+.post-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 1em;
+  flex-direction: column; }
+
+@media screen and (max-width: 550px) {
+  .excerpt-date {
+    display: none; } }
+@media screen and (min-width: 551px) and (max-width: 900px) {
+  .excerpt-date {
+    text-align: left;
+    padding: 0.7em;
+    display: inline-block; } }
+
+@media screen and (max-width: 550px) {
+  .excerpt-image {
+    display: none; } }
+@media screen and (min-width: 551px) and (max-width: 900px) {
+  .excerpt-image {
+    order: 1;
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    margin-right: 0.7em; } }
+
+.post-excerpt {
   display: flex;
   flex-wrap: wrap;
   padding: 0.7em;
-  align-items: center;
-  margin-bottom: 1em; }
-  .post-exerpt .exerpt-title {
-    flex: 1;
-    order: 2;
+  align-items: center; }
+  @media screen and (max-width: 550px) {
+    .post-excerpt {
+      width: 100%; } }
+  @media screen and (min-width: 551px) and (max-width: 900px) {
+    .post-excerpt {
+      flex-direction: row;
+      order: 2;
+      flex: 1; } }
+  .post-excerpt .excerpt-title {
     display: flex;
     align-items: center; }
-  .post-exerpt .date-time {
-    order: 1;
+    @media screen and (max-width: 550px) {
+      .post-excerpt .excerpt-title {
+        flex: 1;
+        order: 2; } }
+    @media screen and (min-width: 551px) and (max-width: 900px) {
+      .post-excerpt .excerpt-title {
+        order: 1;
+        width: 100%;
+        padding: 0.2em 0; } }
+  @media screen and (max-width: 550px) {
+    .post-excerpt .excerpt-description {
+      display: none; } }
+  @media screen and (min-width: 551px) and (max-width: 900px) {
+    .post-excerpt .excerpt-description {
+      order: 3;
+      flex: 1; } }
+  .post-excerpt .date-time {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-right: 0.7em; }
-    .post-exerpt .date-time .exerpt-date {
-      width: 100%;
-      order: 1;
-      padding-bottom: 0.2em;
-      text-align: center; }
-    .post-exerpt .date-time .time-to-read {
-      width: 90px;
-      height: 90px;
-      order: 2;
+    @media screen and (max-width: 550px) {
+      .post-excerpt .date-time {
+        order: 1; } }
+    @media screen and (min-width: 551px) and (max-width: 900px) {
+      .post-excerpt .date-time {
+        order: 2; } }
+    @media screen and (max-width: 550px) {
+      .post-excerpt .date-time .excerpt-date-phone {
+        width: 100%;
+        order: 1;
+        padding-bottom: 0.2em;
+        text-align: center; } }
+    @media screen and (min-width: 551px) and (max-width: 900px) {
+      .post-excerpt .date-time .excerpt-date-phone {
+        display: none; } }
+    .post-excerpt .date-time .time-to-read {
       background-color: inherit;
       border-width: 2px;
       border-style: solid;
@@ -114,24 +174,38 @@ h3 {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 0.2em; }
-      .post-exerpt .date-time .time-to-read h1 {
+      padding: 0.2em;
+      width: 90px;
+      height: 90px; }
+      @media screen and (max-width: 550px) {
+        .post-excerpt .date-time .time-to-read {
+          order: 2; } }
+      @media screen and (min-width: 551px) and (max-width: 900px) {
+        .post-excerpt .date-time .time-to-read {
+          order: 3; } }
+      .post-excerpt .date-time .time-to-read h1 {
         color: #FF4B3E;
-        font-size: 2.5em;
-        order: 1; }
-      .post-exerpt .date-time .time-to-read div {
+        order: 1;
+        font-size: 2.5em; }
+      .post-excerpt .date-time .time-to-read div {
         order: 1;
         text-align: center; }
-      .post-exerpt .date-time .time-to-read .content-string {
+      .post-excerpt .date-time .time-to-read .content-string {
         display: none; }
-  .post-exerpt .top-tags {
-    width: 100%;
-    order: 3;
+  .post-excerpt .top-tags {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-top: 0.7em; }
-    .post-exerpt .top-tags .tag {
+    padding-top: 0.7em;
+    width: 100%; }
+    @media screen and (max-width: 550px) {
+      .post-excerpt .top-tags {
+        order: 3; } }
+    @media screen and (min-width: 551px) and (max-width: 900px) {
+      .post-excerpt .top-tags {
+        order: 4;
+        justify-content: flex-end; } }
+    .post-excerpt .top-tags .tag {
       text-transform: uppercase;
       padding: 0.2em;
       margin-right: 0.7em;

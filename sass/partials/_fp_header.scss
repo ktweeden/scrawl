@@ -1,13 +1,21 @@
 .blog-title-background {
   background-color: $primary-colour;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 
   h1 {
     padding: $medium-padding $small-padding;
     background-color: inherit;
-    font-size: $biggest-header;
     margin-bottom: $small-padding;
     text-align: center;
+    order: 1;
+    @include mq-phone {
+      font-size: $biggest-header;
+    };
+    @include mq-tablet {
+      font-size: 4em;
+    };
   }
 }
 

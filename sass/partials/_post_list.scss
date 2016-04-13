@@ -5,39 +5,112 @@
   color: $secondary-colour;
 }
 
-.post-exerpt {
-  width: 100%;
+.post-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: $large-padding;
+    flex-direction: column;
+}
+
+.excerpt-date {
+  @include mq-phone {
+    display: none;
+  };
+
+  @include mq-tablet {
+    text-align: left;
+    padding: $medium-padding;
+    display: inline-block;
+  };
+}
+
+.excerpt-image {
+  @include mq-phone {
+    display: none;
+  };
+
+  @include mq-tablet {
+    order: 1;
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    margin-right: $medium-padding;
+  };
+}
+
+.post-excerpt {
   display: flex;
   flex-wrap: wrap;
   padding: $medium-padding;
   align-items: center;
-  margin-bottom: $large-padding;
 
-  .exerpt-title {
-    flex: 1;
+  @include mq-phone {
+    width: 100%;
+  };
+
+  @include mq-tablet {
+    flex-direction: row;
     order: 2;
+    flex: 1;
+  };
+
+
+  .excerpt-title {
     display: flex;
     align-items: center;
+
+    @include mq-phone {
+      flex: 1;
+      order: 2;
+    };
+
+    @include mq-tablet {
+      order: 1;
+      width: 100%;
+      padding: $small-padding 0;
+    };
+  }
+
+  .excerpt-description {
+    @include mq-phone {
+      display: none;
+    };
+
+    @include mq-tablet {
+      order: 3;
+      flex: 1;
+    };
   }
 
   .date-time {
-    order: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-right: $medium-padding;
 
-    .exerpt-date {
-      width: 100%;
+    @include mq-phone {
       order: 1;
-      padding-bottom: $small-padding;
-      text-align: center;
+    };
+
+    @include mq-tablet {
+      order: 2;
+    };
+
+    .excerpt-date-phone {
+
+      @include mq-phone {
+        width: 100%;
+        order: 1;
+        padding-bottom: $small-padding;
+        text-align: center;
+      };
+
+      @include mq-tablet {
+        display: none
+      };
     }
     .time-to-read {
-      width: 90px;
-      height: 90px;
-      order: 2;
       background-color: inherit;
       border-width: 2px;
       border-style: solid;
@@ -47,11 +120,21 @@
       justify-content: center;
       align-items: center;
       padding: $small-padding;
+      width: 90px;
+      height: 90px;
+
+      @include mq-phone {
+        order: 2;
+      };
+
+      @include mq-tablet {
+        order: 3;
+      };
 
       h1 {
         color: $tertiary-colour;
-        font-size: $large-header;
         order: 1;
+        font-size: $large-header;
       }
 
       div {
@@ -66,12 +149,20 @@
   }
 
   .top-tags {
-    width: 100%;
-    order: 3;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     padding-top: $medium-padding;
+    width: 100%;
+
+    @include mq-phone {
+      order: 3;
+    };
+
+    @include mq-tablet {
+      order: 4;
+      justify-content: flex-end;
+    };
 
     .tag {
       text-transform: uppercase;
