@@ -71,40 +71,29 @@ h3 {
     text-align: center; }
 
 .post-title-background h2 {
-  padding: 0.7em 0.2em;
   font-size: 2.5em;
   color: #254E70;
   background-color: inherit;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  padding: 0.7em 0.2em; }
 
-.authorship {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  padding: 0.2em 0.7em; }
-  .authorship .author-pic {
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    background-size: cover;
-    order: 1; }
-  .authorship .name-date {
-    display: flex;
-    flex-direction: column;
-    order: 2;
-    padding-left: 0.7em; }
-    .authorship .name-date .author-name {
-      order: 1;
-      padding-left: 0.2em;
-      color: #FF4B3E; }
-    .authorship .name-date .post-date {
-      order: 2; }
+.post-image {
+  width: 100%;
+  background-size: cover;
+  margin-right: 0.7em;
+  margin-bottom: 0.7em; }
+  @media screen and (max-width: 550px) {
+    .post-image {
+      height: 150px; } }
+  @media screen and (min-width: 551px) {
+    .post-image {
+      margin-top: 0.7em;
+      height: 250px; } }
 
 .tag-container {
   display: flex;
-  flex-wrap: wrap;
-  margin: 0.7em 0.7em; }
+  flex-wrap: wrap; }
   .tag-container .tag {
     text-transform: uppercase;
     padding: 0.2em;
@@ -132,13 +121,36 @@ h3 {
     padding: 0.2em;
     margin: 0.2em; }
 
+@media screen and (max-width: 550px) {
+  .theme-info {
+    display: none; } }
+@media screen and (min-width: 551px) {
+  .theme-info {
+    color: #FF4B3E;
+    background-color: #EFEFEF;
+    text-align: right;
+    font-size: 0.8em;
+    padding: 0.7em;
+    width: 100%;
+    order: 1; }
+    .theme-info a {
+      border-bottom: 1px solid #FF4B3E; } }
+
 .content-wrapper {
   order: 2;
   flex-grow: 1;
-  padding: 0.2em 0.7em; }
+  max-width: 900px; }
+  @media screen and (max-width: 550px) {
+    .content-wrapper {
+      padding: 0.2em 0.7em; } }
+  @media screen and (min-width: 551px) {
+    .content-wrapper {
+      padding: 0.2em 2em; } }
   .content-wrapper h1, .content-wrapper h2, .content-wrapper h3, .content-wrapper h4 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     color: #254E70; }
+  .content-wrapper p {
+    padding: 0.2em 0; }
   .content-wrapper a {
     text-decoration: underline;
     border-bottom: 1px solid #FFBF00;
@@ -170,10 +182,78 @@ h3 {
     width: 100%; }
   .full-content-wrapper .tag-wrapper {
     order: 3;
-    width: 100%; }
-  .full-content-wrapper .footer-wrapper {
+    width: 100%;
+    max-width: 900px; }
+    @media screen and (max-width: 550px) {
+      .full-content-wrapper .tag-wrapper {
+        padding: 0.2em 0.7em; } }
+    @media screen and (min-width: 551px) {
+      .full-content-wrapper .tag-wrapper {
+        padding: 0.2em 2em; } }
+  .full-content-wrapper .np-wrapper {
     order: 4;
     width: 100%;
+    max-width: 900px; }
+    @media screen and (max-width: 550px) {
+      .full-content-wrapper .np-wrapper {
+        padding: 0 0.7em; } }
+    @media screen and (min-width: 551px) {
+      .full-content-wrapper .np-wrapper {
+        padding: 0 2em; } }
+  .full-content-wrapper .footer-wrapper {
+    order: 5;
+    width: 100%;
     align-self: flex-end; }
+
+.authorship {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-bottom: 0.7em; }
+  .authorship .author-pic {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    order: 1; }
+  .authorship a {
+    border: 0px; }
+  .authorship .name-date {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    padding-left: 0.7em; }
+    .authorship .name-date .author-name {
+      order: 1;
+      padding-left: 0.2em;
+      color: #FF4B3E; }
+    .authorship .name-date .post-date {
+      order: 2; }
+
+.next-post-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row; }
+  .next-post-wrapper .prev-post {
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-bottom: 0.2em;
+    text-align: left; }
+  .next-post-wrapper .next-post {
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-bottom: 0.2em;
+    text-align: right; }
+  .next-post-wrapper a {
+    width: 100%;
+    color: #254E70;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 0.7em 0; }
 
 /*# sourceMappingURL=post.css.map */

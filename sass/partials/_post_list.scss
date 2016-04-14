@@ -19,7 +19,9 @@
 
   @include mq-tablet {
     text-align: left;
-    padding: $medium-padding;
+    padding-top: $medium-padding;
+    padding-left: $medium-padding;
+    padding-right: $medium-padding;
     display: inline-block;
   };
 }
@@ -35,23 +37,28 @@
     height: 250px;
     background-size: cover;
     margin-right: $medium-padding;
+    margin-top: $medium-padding;
+    margin-bottom: $medium-padding;
   };
 }
 
 .post-excerpt {
   display: flex;
   flex-wrap: wrap;
-  padding: $medium-padding;
   align-items: center;
 
   @include mq-phone {
     width: 100%;
+    padding:  $medium-padding;
   };
 
   @include mq-tablet {
     flex-direction: row;
     order: 2;
     flex: 1;
+    padding-left: $medium-padding;
+    padding-right: $medium-padding;
+    padding-bottom: $medium-padding;
   };
 
 

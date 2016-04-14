@@ -28,44 +28,27 @@
 
 .post-title-background {
   h2 {
-    padding: $medium-padding $small-padding;
     font-size: $large-header;
     color: $secondary-colour;
     background-color: inherit;
     text-align: center;
     width: 100%;
+    padding: $medium-padding $small-padding;
   }
 }
 
-.authorship {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  padding: $small-padding $medium-padding;
+.post-image {
+  width: 100%;
+  background-size: cover;
+  margin-right: $medium-padding;
+  margin-bottom: $medium-padding;
 
-  .author-pic {
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    background-size: cover;
-    order: 1;
-  }
+  @include mq-phone {
+    height: 150px;
+  };
 
-  .name-date {
-    display: flex;
-    flex-direction: column;
-    order: 2;
-    padding-left: $medium-padding;
-
-    .author-name {
-      order: 1;
-      padding-left: $small-padding;
-      color: $tertiary-colour;
-
-    }
-
-    .post-date {
-      order: 2;
-    }
-  }
+  @include mq-tablet {
+    margin-top: $medium-padding;
+    height: 250px;
+  };
 }

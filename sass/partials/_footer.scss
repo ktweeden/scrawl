@@ -18,5 +18,23 @@
     padding: $small-padding;
     margin: $small-padding;
   }
+}
+.theme-info {
+  @include mq-phone {
+    display: none;
+  };
 
+  @include mq-tablet {
+    color: $tertiary-colour;
+    background-color: $background-colour;
+    text-align: right;
+    font-size: $tiny-text;
+    padding: $medium-padding;
+    width: 100%;
+    order: 1;
+
+    a {
+      border-bottom: 1px solid $tertiary-colour;
+    }
+};
 }

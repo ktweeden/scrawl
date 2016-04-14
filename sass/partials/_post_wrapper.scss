@@ -11,10 +11,32 @@
   .tag-wrapper {
     order: 3;
     width: 100%;
+    max-width: 900px;
+
+    @include mq-phone {
+      padding: $small-padding $medium-padding;
+    };
+
+    @include mq-tablet {
+      padding: $small-padding 2em;
+    };
+  }
+  .np-wrapper {
+    order: 4;
+    width: 100%;
+    max-width: 900px;
+    
+    @include mq-phone {
+      padding: 0 $medium-padding;
+    };
+
+    @include mq-tablet {
+      padding: 0 2em;
+    };
   }
 
   .footer-wrapper {
-    order: 4;
+    order: 5;
     width: 100%;
     align-self: flex-end;
   }

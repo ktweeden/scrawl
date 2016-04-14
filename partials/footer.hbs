@@ -1,16 +1,22 @@
 <footer>
+  <div class="theme-info">
+    theme by <a href="https://github.com/ktweeden">Kate Preston</a>
+  </div>
   <div class="footer-container">
+    <a href="mailto:ktweeden@hotmail.com" class="social-button">
+      <i class="icon-mail" aria-hidden="true"></i>
+    </a>
     <a href="https://twitter.com/ktweeden" class="social-button">
-      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="icon-twitter"></i>
     </a>
     <a href="https://github.com/ktweeden" class="social-button">
-      <i class="fa fa-github" aria-hidden="true"></i>
+      <i class="icon-github"></i>
     </a>
     <a href="http://codepen.io/katepreston/" class="social-button">
-      <i class="fa fa-codepen" aria-hidden="true"></i>
+      <i class="icon-codepen" aria-hidden="true"></i>
     </a>
-    <a href="mailto:ktweeden@hotmail.com" class="social-button">
-      <i class="fa fa-envelope" aria-hidden="true"></i>
+    <a href="{{@blog.url/rss}}" class="social-button">
+      <i class="icon-rss" aria-hidden="true"></i>
     </a>
   </div>
   <script type="text/javascript" src="{{asset 'js/readingTime.js'}}"></script>

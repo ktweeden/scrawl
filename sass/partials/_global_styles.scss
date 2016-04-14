@@ -23,6 +23,7 @@ $biggest-header: 3.5em;
 $large-header: 2.5em;
 $medium-header: 2em;
 $small-header: 1.5em;
+$tiny-text: 0.8em;
 
 
 /**
@@ -85,7 +86,7 @@ h3 {
 }
 
 @mixin mq-tablet {
-  @media screen and (min-width: #{$phone-layout-max+1px}) and (max-width: #{$tablet-layout-max})
+  @media screen and (min-width: #{$phone-layout-max+1px})
   {
     @content;
   }

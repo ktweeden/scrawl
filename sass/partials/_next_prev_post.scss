@@ -1,0 +1,32 @@
+.next-post-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+
+  .prev-post {
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-bottom: $small-padding;
+    text-align: left;
+  }
+
+  .next-post {
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-bottom: $small-padding;
+    text-align: right;
+  }
+
+  a {
+    width: 100%;
+    color: $secondary-colour;
+    text-transform: uppercase;
+    font-size: $small-header;
+    padding: $medium-padding 0;
+    }
+}

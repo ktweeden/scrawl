@@ -1,11 +1,23 @@
 .content-wrapper {
   order: 2;
   flex-grow: 1;
-  padding: $small-padding $medium-padding;
+  max-width: 900px;
+
+    @include mq-phone {
+      padding: $small-padding $medium-padding;
+    };
+
+    @include mq-tablet {
+      padding: $small-padding 2em;
+    };
 
   h1, h2, h3, h4 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     color: $secondary-colour;
+  }
+
+  p {
+    padding: $small-padding 0;
   }
 
   a {
