@@ -49,7 +49,7 @@
 
   @include mq-phone {
     width: 100%;
-    padding:  $medium-padding;
+    padding: $medium-padding;
   };
 
   @include mq-tablet {
@@ -174,11 +174,19 @@
     .tag {
       text-transform: uppercase;
       padding: $small-padding;
-      margin-right: $medium-padding;
       margin-bottom: $small-padding;
       text-align: center;
       color: $secondary-colour;
       border-bottom: 1px solid $secondary-colour;
+
+      @include mq-phone {
+        margin-right: $medium-padding;
+      };
+
+      @include mq-tablet {
+        margin-left: $medium-padding;
+      };
+
     }
   }
 }

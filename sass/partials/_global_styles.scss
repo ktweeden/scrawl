@@ -17,6 +17,7 @@ $background-colour: #EFEFEF;
 $small-padding: 0.2em;
 $medium-padding: 0.7em;
 $large-padding: 1em;
+$reading-column-padding: 2em;
 
 /* Font sizes */
 $biggest-header: 3.5em;
@@ -86,7 +87,14 @@ h3 {
 }
 
 @mixin mq-tablet {
-  @media screen and (min-width: #{$phone-layout-max+1px})
+  @media screen and (min-width: #{$phone-layout-max+1px}) and (max-width: #{$tablet-layout-max})
+  {
+    @content;
+  }
+}
+
+@mixin mq-desktop {
+  @media screen and (min-width: #{$tablet-layout-max+1px})
   {
     @content;
   }

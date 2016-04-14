@@ -33,7 +33,14 @@
     background-color: inherit;
     text-align: center;
     width: 100%;
-    padding: $medium-padding $small-padding;
+
+    @include mq-phone {
+      padding: $medium-padding $small-padding;
+    };
+
+    @include mq-tablet {
+      padding: $medium-padding $reading-column-padding;
+    };
   }
 }
 

@@ -2,13 +2,14 @@
   order: 2;
   flex-grow: 1;
   max-width: 900px;
+  align-self: center;
 
     @include mq-phone {
       padding: $small-padding $medium-padding;
     };
 
     @include mq-tablet {
-      padding: $small-padding 2em;
+      padding: $small-padding $reading-column-padding;
     };
 
   h1, h2, h3, h4 {

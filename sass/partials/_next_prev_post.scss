@@ -27,6 +27,14 @@
     color: $secondary-colour;
     text-transform: uppercase;
     font-size: $small-header;
-    padding: $medium-padding 0;
+
+    @include mq-phone {
+      padding: $medium-padding 0;
+    };
+
+    @include mq-tablet {
+      padding-top: $medium-padding;
+    };
+
     }
 }

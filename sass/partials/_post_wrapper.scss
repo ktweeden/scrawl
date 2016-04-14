@@ -12,6 +12,7 @@
     order: 3;
     width: 100%;
     max-width: 900px;
+    align-self: center;
 
     @include mq-phone {
       padding: $small-padding $medium-padding;
@@ -20,12 +21,17 @@
     @include mq-tablet {
       padding: $small-padding 2em;
     };
+
+    @include mq-desktop {
+      padding: $small-padding 0;
+    };
   }
   .np-wrapper {
     order: 4;
     width: 100%;
     max-width: 900px;
-    
+    align-self: center;
+
     @include mq-phone {
       padding: 0 $medium-padding;
     };
