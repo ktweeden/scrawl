@@ -10,7 +10,7 @@
     padding-right: $medium-padding;
   };
 
-  @include mq-tablet {
+  @include mq-not-phone {
     padding: $small-padding $medium-padding;
   };
 

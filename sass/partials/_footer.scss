@@ -24,7 +24,7 @@
     display: none;
   };
 
-  @include mq-tablet {
+  @include mq-not-phone {
     color: $tertiary-colour;
     background-color: $background-colour;
     text-align: right;

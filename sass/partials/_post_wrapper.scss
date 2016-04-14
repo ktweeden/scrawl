@@ -18,7 +18,7 @@
       padding: $small-padding $medium-padding;
     };
 
-    @include mq-tablet {
+    @include mq-not-phone {
       padding: $small-padding 2em;
     };
 
@@ -36,7 +36,7 @@
       padding: 0 $medium-padding;
     };
 
-    @include mq-tablet {
+    @include mq-not-phone {
       padding: 0 2em;
     };
   }

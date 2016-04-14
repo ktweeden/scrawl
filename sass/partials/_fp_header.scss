@@ -13,7 +13,7 @@
     @include mq-phone {
       font-size: $biggest-header;
     };
-    @include mq-tablet {
+    @include mq-not-phone {
       font-size: 4em;
     };
   }

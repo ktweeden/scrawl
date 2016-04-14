@@ -86,6 +86,13 @@ h3 {
   }
 }
 
+@mixin mq-not-phone {
+  @media screen and (min-width: #{$phone-layout-max+1px})
+  {
+    @content;
+  }
+}
+
 @mixin mq-tablet {
   @media screen and (min-width: #{$phone-layout-max+1px}) and (max-width: #{$tablet-layout-max})
   {

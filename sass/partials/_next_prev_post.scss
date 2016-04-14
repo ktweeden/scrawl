@@ -32,7 +32,7 @@
       padding: $medium-padding 0;
     };
 
-    @include mq-tablet {
+    @include mq-not-phone {
       padding-top: $medium-padding;
     };
 

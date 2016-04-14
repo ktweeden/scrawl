@@ -38,7 +38,7 @@
       padding: $medium-padding $small-padding;
     };
 
-    @include mq-tablet {
+    @include mq-not-phone {
       padding: $medium-padding $reading-column-padding;
     };
   }
@@ -54,7 +54,7 @@
     height: 150px;
   };
 
-  @include mq-tablet {
+  @include mq-not-phone {
     margin-top: $medium-padding;
     height: 250px;
   };
