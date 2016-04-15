@@ -144,7 +144,7 @@ h3 {
 .content-wrapper {
   order: 2;
   flex-grow: 1;
-  max-width: 900px;
+  max-width: 1000px;
   align-self: center;
   width: 100%; }
   @media screen and (max-width: 550px) {
@@ -190,7 +190,7 @@ h3 {
   .full-content-wrapper .tag-wrapper {
     order: 3;
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     align-self: center; }
     @media screen and (max-width: 550px) {
       .full-content-wrapper .tag-wrapper {
@@ -201,7 +201,7 @@ h3 {
   .full-content-wrapper .np-wrapper {
     order: 4;
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     align-self: center; }
     @media screen and (max-width: 550px) {
       .full-content-wrapper .np-wrapper {

@@ -27,20 +27,25 @@
   @include mq-not-phone {
     text-align: left;
     padding-top: $medium-padding;
-    padding-left: $medium-padding;
     padding-right: $medium-padding;
     display: inline-block;
+  };
+
+  @include mq-tablet {
+    padding-left: $medium-padding;
   };
 }
 
 .image-wrapper {
   order: 1;
+
   @include mq-not-desktop {
     width: 100%;
   };
 
   @include mq-desktop {
     width: 40%;
+    margin-right: $large-padding;
   };
 }
 
@@ -49,8 +54,11 @@
     display: none;
   };
 
-  @include mq-not-phone {
+  @include mq-tablet {
     width: 100%;
+  };
+
+  @include mq-not-phone {
     order: 1;
     height: 250px;
     background-size: cover;
@@ -58,12 +66,15 @@
     margin-top: $medium-padding;
     margin-bottom: $medium-padding;
   };
+
+  @include mq-desktop {
+    width: 40%;
+  };
 }
 
 .post-excerpt {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 
   @include mq-phone {
     width: 100%;
@@ -74,17 +85,22 @@
     width: 100%;
     flex: 1;
     padding-right: $medium-padding;
+    padding-left: $medium-padding;
   };
 
   @include mq-not-phone {
     flex-direction: row;
     order: 2;
-    padding-left: $medium-padding;
     padding-bottom: $medium-padding;
   };
 
+  @include mq-not-desktop {
+    align-items: center;
+  };
+
   @include mq-desktop {
-    width: 60%;
+    align-items: flex-start;
+    flex: 1;
   };
 
 
@@ -99,9 +115,12 @@
 
     @include mq-not-phone {
       order: 1;
-      width: 100%;
       padding: $small-padding 0;
+      width: 100%;
     };
+
+
+
   }
 
   .excerpt-description {
@@ -109,9 +128,14 @@
       display: none;
     };
 
-    @include mq-not-phone {
+    @include mq-tablet {
       order: 3;
       flex: 1;
+    };
+
+    @include mq-desktop {
+      order: 2;
+      width: 100%;
     };
   }
 
@@ -126,8 +150,13 @@
       order: 1;
     };
 
-    @include mq-not-phone {
+    @include mq-tablet {
       order: 2;
+    };
+
+    @include mq-desktop {
+      order: 4;
+      align-self: flex-end;
     };
 
     .excerpt-date-phone {
@@ -184,33 +213,53 @@
   .top-tags {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
     padding-top: $medium-padding;
-    width: 100%;
 
     @include mq-phone {
       order: 3;
+      justify-content: flex-start;
     };
 
-    @include mq-not-phone {
+    @include mq-tablet {
       order: 4;
       justify-content: flex-end;
+    };
+
+    @include mq-not-desktop {
+      width: 100%;
+    };
+
+    @include mq-desktop {
+      order: 3;
+      justify-content: flex-start;
+      align-self: flex-end;
+      flex: 1;
     };
 
     .tag {
       text-transform: uppercase;
       padding: $small-padding;
-      margin-bottom: $small-padding;
       text-align: center;
       color: $secondary-colour;
-      border-bottom: 1px solid $secondary-colour;
 
       @include mq-phone {
         margin-right: $medium-padding;
       };
 
-      @include mq-not-phone {
+      @include mq-tablet {
         margin-left: $medium-padding;
+      };
+
+      @include mq-not-desktop {
+        border-bottom: 1px solid $secondary-colour;
+        margin-bottom: $small-padding;
+      };
+
+      @include mq-desktop {
+        margin-right: $medium-padding;
+        margin-top: $small-padding;
+        border: 2px solid $secondary-colour;
+        font-size: 1.1em;
       };
 
     }
