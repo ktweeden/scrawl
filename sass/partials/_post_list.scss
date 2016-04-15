@@ -117,6 +117,7 @@
       order: 1;
       padding: $small-padding 0;
       width: 100%;
+      font-family: 'Permanent Marker', Impact, Charcoal, sans-serif;
     };
 
 
@@ -144,14 +145,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-right: $medium-padding;
 
     @include mq-phone {
       order: 1;
+      margin-right: $medium-padding;
     };
 
     @include mq-tablet {
       order: 2;
+      margin-right: $medium-padding;
+
     };
 
     @include mq-desktop {

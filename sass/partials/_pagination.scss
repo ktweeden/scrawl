@@ -10,8 +10,12 @@
     padding-right: $medium-padding;
   };
 
-  @include mq-not-phone {
+  @include mq-tablet {
     padding: $small-padding $medium-padding;
+  };
+
+  @include mq-desktop {
+    padding: $medium-padding 0;
   };
 
   .wrapper {

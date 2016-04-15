@@ -174,7 +174,8 @@ h3 {
       .post-excerpt .excerpt-title {
         order: 1;
         padding: 0.2em 0;
-        width: 100%; } }
+        width: 100%;
+        font-family: 'Permanent Marker', Impact, Charcoal, sans-serif; } }
   @media screen and (max-width: 550px) {
     .post-excerpt .excerpt-description {
       display: none; } }
@@ -190,14 +191,15 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    margin-right: 0.7em; }
+    flex-direction: column; }
     @media screen and (max-width: 550px) {
       .post-excerpt .date-time {
-        order: 1; } }
+        order: 1;
+        margin-right: 0.7em; } }
     @media screen and (min-width: 551px) and (max-width: 900px) {
       .post-excerpt .date-time {
-        order: 2; } }
+        order: 2;
+        margin-right: 0.7em; } }
     @media screen and (min-width: 901px) {
       .post-excerpt .date-time {
         order: 4;
@@ -291,9 +293,12 @@ h3 {
       padding-bottom: 0.7em;
       padding-left: 0.7em;
       padding-right: 0.7em; } }
-  @media screen and (min-width: 551px) {
+  @media screen and (min-width: 551px) and (max-width: 900px) {
     .pagination {
       padding: 0.2em 0.7em; } }
+  @media screen and (min-width: 901px) {
+    .pagination {
+      padding: 0.7em 0; } }
   .pagination .wrapper {
     width: 50%;
     display: flex;
