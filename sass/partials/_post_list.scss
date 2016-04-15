@@ -9,7 +9,14 @@
     display: flex;
     flex-wrap: nowrap;
     margin-bottom: $large-padding;
-    flex-direction: column;
+
+    @include mq-not-desktop {
+      flex-direction: column;
+    };
+
+    @include mq-desktop {
+      flex-direction: row;
+    };
 }
 
 .excerpt-date {
@@ -26,14 +33,25 @@
   };
 }
 
+.image-wrapper {
+  order: 1;
+  @include mq-not-desktop {
+    width: 100%;
+  };
+
+  @include mq-desktop {
+    width: 40%;
+  };
+}
+
 .excerpt-image {
   @include mq-phone {
     display: none;
   };
 
   @include mq-not-phone {
-    order: 1;
     width: 100%;
+    order: 1;
     height: 250px;
     background-size: cover;
     margin-right: $medium-padding;
@@ -52,13 +70,21 @@
     padding: $medium-padding;
   };
 
+  @include mq-tablet {
+    width: 100%;
+    flex: 1;
+    padding-right: $medium-padding;
+  };
+
   @include mq-not-phone {
     flex-direction: row;
     order: 2;
-    flex: 1;
     padding-left: $medium-padding;
-    padding-right: $medium-padding;
     padding-bottom: $medium-padding;
+  };
+
+  @include mq-desktop {
+    width: 60%;
   };
 
 
