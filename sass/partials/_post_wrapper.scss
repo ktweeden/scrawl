@@ -21,10 +21,6 @@
     @include mq-not-phone {
       padding: $small-padding 2em;
     };
-
-    @include mq-desktop {
-      padding: $small-padding 0;
-    };
   }
   .np-wrapper {
     order: 4;

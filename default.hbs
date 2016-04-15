@@ -2,8 +2,14 @@
 <html>
   <head>
 
+    {{! Settings}}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {{! Page Meta}}
     <title>{{meta_title}}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{meta_description}}" />
+    <link rel="icon" href="{{@blog.logo}}" />
 
     {{>css_styles}}
     {{>header_scripts}}

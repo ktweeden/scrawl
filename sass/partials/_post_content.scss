@@ -3,6 +3,7 @@
   flex-grow: 1;
   max-width: 900px;
   align-self: center;
+  width: 100%;
 
     @include mq-phone {
       padding: $small-padding $medium-padding;
