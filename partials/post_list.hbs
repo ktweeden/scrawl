@@ -9,12 +9,12 @@
 </time>
   <div class="post-wrapper">
     {{#if image}}
-        <div class="excerpt-image" style="background-image:url({{image}})">
-        </div>
+        <a class="excerpt-image" style="background-image:url({{image}})" href="{{url}}">
+        </a>
     </a>
     {{/if}}
-      <a href="{{url}}"class="post-excerpt">
-        <div class="date-time">
+      <div class="post-excerpt">
+        <a class="date-time" href="{{url}}">
           <time class="excerpt-date-phone" datetime="{{date format='YYYY-MM-DD'}}">
             {{date format="YYYY MMM DD"}}
           </time>
@@ -23,20 +23,20 @@
               {{excerpt words="5000"}}
             </div>
           </div>
-        </div>
-        <h2 class="excerpt-title">
-          {{title}}
-        </h2>
-        <div class="excerpt-description">
+        </a>
+        <a class="excerpt-title" href="{{url}}">
+          <h2>{{title}}</h2>
+        </a>
+        <a class="excerpt-description" href="{{url}}">
           {{excerpt words="50"}}
-        </div>
+        </a>
         {{#if tags}}
         <div class="top-tags">
           {{#foreach tags limit="3"}}
-            <div class="tag">{{name}}</div>
+            <a class="tag" href="{{url}}">{{name}}</a>
           {{/foreach}}
         </div>
         {{/if}}
-      </a>
+      </div>
   </div>
 {{/foreach}}
