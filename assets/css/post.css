@@ -91,10 +91,15 @@ h3 {
   @media screen and (max-width: 550px) {
     .post-image {
       height: 150px; } }
+  @media screen and (min-width: 551px) and (max-width: 1000px) {
+    .post-image {
+      height: 250px; } }
   @media screen and (min-width: 551px) {
     .post-image {
-      margin-top: 0.7em;
-      height: 250px; } }
+      margin-top: 0.7em; } }
+  @media screen and (min-width: 1001px) {
+    .post-image {
+      height: 400px; } }
 
 .tag-container {
   display: flex;
