@@ -17,6 +17,10 @@
     color: $primary-colour;
     padding: $small-padding;
     margin: $small-padding;
+
+    &.hidden {
+      display: none;
+    }
   }
 }
 .theme-info {

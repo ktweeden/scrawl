@@ -130,6 +130,8 @@ h3 {
     color: #FFBF00;
     padding: 0.2em;
     margin: 0.2em; }
+    .footer-container .social-button.hidden {
+      display: none; }
 
 @media screen and (max-width: 550px) {
   .theme-info {

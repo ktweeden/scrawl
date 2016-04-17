@@ -3,21 +3,75 @@
     theme by <a href="https://github.com/ktweeden">Kate Preston</a>
   </div>
   <div class="footer-container">
-    <a href="mailto:ktweeden@hotmail.com" class="social-button">
-      <i class="icon-mail" aria-hidden="true"></i>
-    </a>
-    <a href="https://twitter.com/ktweeden" class="social-button">
-      <i class="icon-twitter"></i>
-    </a>
-    <a href="https://github.com/ktweeden" class="social-button">
-      <i class="icon-github"></i>
-    </a>
-    <a href="http://codepen.io/katepreston/" class="social-button">
-      <i class="icon-codepen" aria-hidden="true"></i>
-    </a>
-    <a href="{{@blog.url/rss}}" class="social-button">
-      <i class="icon-rss" aria-hidden="true"></i>
-    </a>
+    <a href="{{@blog.url/rss}}" class="social-button"><i class="icon-rss"></i></a>
+    <a class="social-button twitter hidden"><i class="icon-twitter"></i></a>
+    <a class="social-button github hidden"><i class="icon-github"></i></a>
+    <a class="social-button facebook hidden"><i class="icon-facebook"></i></a>
+    <a class="social-button linkedin hidden"><i class="icon-linkedin"></i></a>
+    <a class="social-button instagram hidden"><i class="icon-instagram"></i></a>
+    <a class="social-button tumblr hidden"><i class="icon-tumblr"></i></a>
+    <a class="social-button pinterest hidden"><i class="icon-pinterest"></i></a>
+    <a class="social-button bitbucket hidden"><i class="icon-bitbucket"></i></a>
+    <a class="social-button codepen hidden"><i class="icon-codepen"></i></a>
+    <a class="social-button skype hidden"><i class="icon-skpe"></i></a>
+    <a class="social-button youtube hidden"><i class="icon-youtube"></i></a>
+    <a class="social-button vine hidden"><i class="icon-vine"></i></a>
   </div>
+
+  <script>
+    // creates url to a given profile on a given platform
+    function formSocialUrl(platform, username) {
+      switch (platform) {
+        case "Twitter":
+          return "https://twitter.com/" + username;
+        case "Github":
+          return "https://github.com/" + username;
+        case "Facebook":
+          return "https://facebook.com/" + username;
+        case "Instagram":
+          return "https://www.instagram.com/" + username;
+        case "Tumblr":
+          return "https://www." + username + ".tumblr.com";
+        case "Pinterest":
+          return "https://www.pinterest.com/" + username;
+        case "Bitbucket":
+          return "https://www.bitbucket.com/" + username;
+        case "Codepen":
+          return "https://www.codepen.io/" + username;
+        case "Youtube":
+          return "https://www.youtube.com/user/" + username;
+        case "Vine":
+          return "https://www.vine.co/" + username;
+      }
+    }
+
+    function revealPlatform (platform) {
+      var reference = platform.toLowerCase()+"Username";
+      if (window.__themeCfg[reference]) {
+        $(".social-button."+platform.toLowerCase()).removeClass("hidden");
+        $('.social-button.' + platform.toLowerCase()).attr('href', formSocialUrl(platform, window.__themeCfg[reference]));
+      }
+      else console.warn("To add a " + platform + " profile link to your blog, put '\x3Cscript\>window.__themeCfg." + reference + "= \'my" + platform + "Username\';\x3C/script\>' in the Ghost code injection!");
+    }
+
+    function revealSocialLinks() {
+      revealPlatform('Twitter');
+      revealPlatform('Github');
+      revealPlatform('Facebook');
+      revealPlatform('Instagram');
+      revealPlatform('Tumblr');
+      revealPlatform('Pinterest');
+      revealPlatform('Bitbucket');
+      revealPlatform('Codepen');
+      revealPlatform('Youtube');
+      revealPlatform('Vine');
+    }
+
+    $(revealSocialLinks());
+
+  </script>
+
+
+
   <script type="text/javascript" src="{{asset 'js/readingTime.js'}}"></script>
 </footer>
