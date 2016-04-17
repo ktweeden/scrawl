@@ -71,4 +71,4 @@ Enough talk, here are some pictures.
 ![Scrawl home page example](https://dl.dropboxusercontent.com/s/ew5skbpisd2gra3/scrawlTabletIndex.png?dl=0)
 
 ###Mobile
-![Scrawl home page example](https://dl.dropboxusercontent.coms/9i3eo9pl5taq5tu/scrawlPhoneIndex.png?dl=0)
+![Scrawl home page example](https://dl.dropboxusercontent.com/s/9i3eo9pl5taq5tu/scrawlPhoneIndex.png?dl=0)
