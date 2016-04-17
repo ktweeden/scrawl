@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Scrawl by ktweeden</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Scrawl</h1>
+      <h2 class="project-tagline">A fully responsive ghost theme</h2>
+      <a href="https://github.com/ktweeden/scrawl" class="btn">View on GitHub</a>
+      <a href="https://github.com/ktweeden/scrawl/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/ktweeden/scrawl/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="scrawl-a-fully-responsive-theme-for-ghost" class="anchor" href="#scrawl-a-fully-responsive-theme-for-ghost" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Scrawl: A fully responsive theme for Ghost</h1>
+
+<p><img src="https://dl.dropboxusercontent.com/s/xhdbn5q9o8k7nnd/scrawlCoverImage.png?dl=0" alt="Scrawl on a tablet"></p>
+
+<p>Features include:</p>
+
+<ul>
+<li>Fully responsive, mobile first design</li>
+<li>Automatic estimated reading times for each post</li>
+<li>Easily configurable social links, without messing around with the server</li>
+<li>For dev blogs: includes <a href="http://prismjs.com/">Prism</a> to style your code snippets<br>
+</li>
+</ul>
+
+<p><a href="#scrawl-in-action">See the screenshots below.</a></p>
+
+<h2>
+<a id="how-to-install" class="anchor" href="#how-to-install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to install</h2>
+
+<p>Get the .zip file for the latest version <a href="https://github.com/ktweeden/scrawl/archive/master.zip">here</a>.</p>
+
+<p>Ghost(Pro) users can upload this <a href="https://github.com/ktweeden/scrawl/archive/master.zip">.zip</a> file via the Pro dashboard. See the <a href="http://support.ghost.org/upload-theme-ghostpro/">official guide</a>.
+Self-hosted Ghost users should upload the <a href="https://github.com/ktweeden/scrawl/archive/master.zip">.zip</a> file to Ghost's <code>content/themes/</code> directory and extract it with <code>unzip -o scrawl-master.zip</code></p>
+
+<h2>
+<a id="configuration" class="anchor" href="#configuration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Configuration</h2>
+
+<p>Scrawl adheres to the <a href="https://github.com/unwitting/gtca">Ghost Theme Configuration Approach</a>, allowing you to add your own social media links to pre-formatted buttons without touching your website's server.</p>
+
+<p>The configuration for Scrawl uses the code injection interface, which you will find at yourwebsite.address/ghost. Each social network or profile that you want to add, requires only one line adding to the blog header code injection.</p>
+
+<p>This configuration approach is designed to be as easy for the user as possible, but if you have any problems then please don't hesitate to get in touch with me!</p>
+
+<h3>
+<a id="social-media-links" class="anchor" href="#social-media-links" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Social media links</h3>
+
+<p>Scrawl supports a range of social media platforms. When configured, a button will appear for each platform in the footer that appears on each page of the theme.</p>
+
+<p>Below is the list of the social media platforms currently supported. Choose the ones that you would like to include on your blog and copy the code. Then, replace the ... with your username for that platform. Remember to keep the speech marks!</p>
+
+<p>For example, if I wanted to add a link to my twitter profile to a blog using scrawl I would simply put</p>
+
+<p><code>&lt;script&gt;window.__themeCfg.twitterUsername = 'ktweeden';&lt;script&gt;</code></p>
+
+<hr>
+
+<p>Copy and paste the relevant links to the blog header code injection box:</p>
+
+<p>bitbucket: <code>&lt;script&gt;window.__themeCfg.bitbucketUsername = '...';&lt;/script&gt;</code></p>
+
+<p>codepen: <code>&lt;script&gt;window.__themeCfg.codepenUsername = '...';&lt;script&gt;</code></p>
+
+<p>facebook: <code>&lt;script&gt;window.__themeCfg.facebookUsername = '...';&lt;script&gt;</code></p>
+
+<p>github: <code>&lt;script&gt;window.__themeCfg.githubUsername = '...';&lt;script&gt;</code></p>
+
+<p>instagram: <code>&lt;script&gt;window.__themeCfg.instagramUsername = '...';&lt;script&gt;</code></p>
+
+<p>pinterest: <code>&lt;script&gt;window.__themeCfg.pinterestUsername = '...';&lt;script&gt;</code></p>
+
+<p>tumblr: <code>&lt;script&gt;window.__themeCfg.tumblrUsername = '...';&lt;script&gt;</code></p>
+
+<p>twitter: <code>&lt;script&gt;window.__themeCfg.twitterUsername = '...';&lt;script&gt;</code></p>
+
+<p>vine: <code>&lt;script&gt;window.__themeCfg.vineUsername = '...';&lt;script&gt;</code></p>
+
+<p>youtube: <code>&lt;script&gt;window.__themeCfg.youtubeUsername = '...';&lt;script&gt;</code></p>
+
+<h3>
+<a id="disqus" class="anchor" href="#disqus" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Disqus</h3>
+
+<p>Scrawl comes with the <a href="https://www.disquss.com">Disqus</a> commenting platform so that you can easily manage interactions with your readers.</p>
+
+<p>To enable commenting:</p>
+
+<ul>
+<li>make sure that you have an account on Disqus.</li>
+<li>Create a "channel" for your blog using Disqus's website. This channel will hold all of the comments for your blog.</li>
+<li>Copy the following code into the blog header code injection, replacing ... with your channel's name (no spaces!).</li>
+</ul>
+
+<p><code>&lt;script&gt;window.__themeCfg.disqusUsername = '...';&lt;/script&gt;</code></p>
+
+<h2>
+<a id="scrawl-in-action" class="anchor" href="#scrawl-in-action" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Scrawl in action</h2>
+
+<p>Enough talk, here are some pictures.</p>
+
+<h3>
+<a id="home-page" class="anchor" href="#home-page" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Home page</h3>
+
+<p><img src="https://dl.dropboxusercontent.com/s/k2nvu6u9uilhyo0/scrawFpFull.png?dl=0" alt="Scrawl home page example"></p>
+
+<h3>
+<a id="post" class="anchor" href="#post" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Post</h3>
+
+<p><img src="https://dl.dropboxusercontent.com/s/62ia4v64y298mh1/A%20long%20article%20example.png?dl=0" alt="Scrawl post example"></p>
+
+<p><img src="https://dl.dropboxusercontent.com/s/sszi74h0qzpvtmw/scrawlPostFull.jpg?dl=0" alt="Scraw formatting"></p>
+
+<h3>
+<a id="tablet" class="anchor" href="#tablet" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tablet</h3>
+
+<p><img src="https://dl.dropboxusercontent.com/s/ew5skbpisd2gra3/scrawlTabletIndex.png?dl=0" alt="Scrawl home page example"></p>
+
+<h3>
+<a id="mobile" class="anchor" href="#mobile" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Mobile</h3>
+
+<p><img src="https://dl.dropboxusercontent.com/s/9i3eo9pl5taq5tu/scrawlPhoneIndex.png?dl=0" alt="Scrawl home page example"></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/ktweeden/scrawl">Scrawl</a> is maintained by <a href="https://github.com/ktweeden">ktweeden</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
