@@ -7,14 +7,14 @@ Features include:
 * For dev blogs: includes [Prism](http://prismjs.com/) to style your code snippets   
 
 
-[See the screenshots below.](scrawl-in-action)
+[See the screenshots below.](#scrawl-in-action)
 
 
 ##How to install
-Get the .zip file for the latest version [here](https://github.com/ktweeden/scrawl/archive/master.zip)
+Get the .zip file for the latest version [here](https://github.com/ktweeden/scrawl/archive/master.zip).
 
 Ghost(Pro) users can upload this [.zip](https://github.com/ktweeden/scrawl/archive/master.zip) file via the Pro dashboard. See the [official guide](http://support.ghost.org/upload-theme-ghostpro/).
-Self-hosted Ghost users should upload the [.zip](https://github.com/ktweeden/scrawl/archive/master.zip) file to Ghost's `content/themes/` directory and extract it with `unzip -o scrawl.zip.`
+Self-hosted Ghost users should upload the [.zip](https://github.com/ktweeden/scrawl/archive/master.zip) file to Ghost's `content/themes/` directory and extract it with `unzip -o scrawl-master.zip`
 
 
 ##Configuration
@@ -35,15 +35,24 @@ For example, if I wanted to add a link to my twitter profile to a blog using scr
 
 in the blog header box on the code injection tab of the blog's admin interface.
 
-bitbucket: `<script>window.__themeCfg.bitbucketUsername = '...'</script>;`
+bitbucket: `<script>window.__themeCfg.bitbucketUsername = '...';</script>`
+
 codepen: `<script>window.__themeCfg.codepenUsername = '...';<script>`
-facebook: `<script>window.__themeCfg.facebookUsername = '...'<script>;`
-github: `<script>window.__themeCfg.githubUsername = '...'<script>;`
-instagram: `<script>window.__themeCfg.instagramUsername = '...'<script>`;
+
+facebook: `<script>window.__themeCfg.facebookUsername = '...';<script>`
+
+github: `<script>window.__themeCfg.githubUsername = '...';<script>`
+
+instagram: `<script>window.__themeCfg.instagramUsername = '...';<script>`
+
 pinterest: `<script>window.__themeCfg.pinterestUsername = '...';<script>`
+
 tumblr: `<script>window.__themeCfg.tumblrUsername = '...';<script>`
+
 twitter: `<script>window.__themeCfg.twitterUsername = '...';<script>`
+
 vine: `<script>window.__themeCfg.vineUsername = '...';<script>`
+
 youtube: `<script>window.__themeCfg.youtubeUsername = '...';<script>`
 
 ###Disqus
@@ -53,7 +62,7 @@ If you want to enable commenting, first make sure that you have an account on Di
 
 When you have created your channel, copy the following code into the blog header box in the code injection tab on your blog's admin interface, replacing ... with your channel's name (no spaces!).
 
-`window.__themeCfg.disqusUsername = '...';`
+`<script>window.__themeCfg.disqusUsername = '...';</script>`
 
 ##Scrawl in action
 Enough talk, here are some pictures.
