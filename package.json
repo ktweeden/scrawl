@@ -1,11 +1,11 @@
 {
-  "name":"what-is-clocks",
+  "name":"scrawl",
   "version":"1.0.0",
   "author":"Kate Preston <ktweeden@gmail.com>",
   "contributors": [],
   "repository":{
     "type": "git",
-    "url": "https://github.com/ktweeden/whatisclocks"
+    "url": "https://github.com/ktweeden/scrawl"
   },
   "keywords":[
     "blog",
