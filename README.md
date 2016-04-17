@@ -63,7 +63,7 @@ Enough talk, here are some pictures.
 ![Scrawl home page example](https://dl.dropboxusercontent.com/s/k2nvu6u9uilhyo0/scrawFpFull.png?dl=0)
 
 ###Post
-![Scrawl post example](https://dl.dropboxusercontent.com/s/sszi74h0qzpvtmw/scrawlPostFull.jpg?dl=0)
+![Scrawl post example](https://dl.dropboxusercontent.com/s/62ia4v64y298mh1/A%20long%20article%20example.png?dl=0)
 
 ![Scraw formatting](https://dl.dropboxusercontent.com/s/sszi74h0qzpvtmw/scrawlPostFull.jpg?dl=0)
 
