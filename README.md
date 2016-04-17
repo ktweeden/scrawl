@@ -56,7 +56,7 @@ vine: `<script>window.__themeCfg.vineUsername = '...';<script>`
 youtube: `<script>window.__themeCfg.youtubeUsername = '...';<script>`
 
 ###Disqus
-Scrawl comes with [Disqus](www.disquss.com) as a way for you to add commenting to your blog.
+Scrawl comes with [Disqus](https://www.disquss.com) as a way for you to add commenting to your blog.
 
 If you want to enable commenting, first make sure that you have an account on Disqus. You then need to create a "channel" for your blog using Disqus's website. This channel will hold all of the comments for your blog.
 
