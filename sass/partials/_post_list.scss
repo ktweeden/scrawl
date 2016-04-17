@@ -56,6 +56,8 @@
 }
 
 .excerpt-image {
+  background-position: center;
+  
   @include mq-phone {
     display: none;
   };

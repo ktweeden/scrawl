@@ -1,5 +1,5 @@
 .content-wrapper {
-  order: 2;
+  order: 3;
   flex-grow: 1;
   max-width: 1000px;
   align-self: center;
@@ -9,8 +9,12 @@
       padding: $small-padding $medium-padding;
     };
 
-    @include mq-not-phone {
+    @include mq-tablet {
       padding: $small-padding $reading-column-padding;
+    };
+
+    @include mq-desktop {
+      padding: $small-padding 0;
     };
 
   h1, h2, h3, h4 {
