@@ -11,7 +11,7 @@ Features include:
 
 
 ##How to install
-Get the .zip file for the latest version (here)[https://github.com/ktweeden/scrawl/archive/master.zip]
+Get the .zip file for the latest version [here](https://github.com/ktweeden/scrawl/archive/master.zip)
 
 Ghost(Pro) users can upload this [.zip](https://github.com/ktweeden/scrawl/archive/master.zip) file via the Pro dashboard. See the [official guide](http://support.ghost.org/upload-theme-ghostpro/).
 Self-hosted Ghost users should upload the [.zip](https://github.com/ktweeden/scrawl/archive/master.zip) file to Ghost's `content/themes/` directory and extract it with `unzip -o scrawl.zip.`
@@ -63,7 +63,7 @@ Enough talk, here are some pictures.
 ![Scrawl home page example](https://dl.dropboxusercontent.com/s/k2nvu6u9uilhyo0/scrawFpFull.png?dl=0)
 
 ###Post
-![Scrawl post example](https://dl.dropboxusercontent.com/s/62ia4v64y298mh1/A%20long%20article%20example.png?dl=0)
+![Scrawl post example](https://dl.dropboxusercontent.com/s/sszi74h0qzpvtmw/scrawlPostFull.jpg?dl=0)
 
 ![Scraw formatting](https://dl.dropboxusercontent.com/s/sszi74h0qzpvtmw/scrawlPostFull.jpg?dl=0)
 
@@ -71,4 +71,4 @@ Enough talk, here are some pictures.
 ![Scrawl home page example](https://dl.dropboxusercontent.com/s/ew5skbpisd2gra3/scrawlTabletIndex.png?dl=0)
 
 ###Mobile
-![Scrawl home page example](https://dl.dropboxusercontent.com/s/9i3eo9pl5taq5tu/scrawlPhoneIndex.png?dl=0)
+![Scrawl home page example](https://dl.dropboxusercontent.coms/9i3eo9pl5taq5tu/scrawlPhoneIndex.png?dl=0)
