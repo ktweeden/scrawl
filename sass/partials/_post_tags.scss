@@ -5,7 +5,8 @@
   .tag {
     text-transform: uppercase;
     padding: $small-padding;
-    margin: $small-padding;
+    margin-right: $small-padding*2;
+    margin-bottom: $small-padding*2;
     text-align: center;
     color: $tertiary-colour;
     border: 1px solid $tertiary-colour;

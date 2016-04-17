@@ -82,9 +82,14 @@ h3 {
 
 .tag-title {
   text-transform: uppercase;
-  padding: 0.7em;
+  padding-top: 1.4em;
+  padding-bottom: 0.7em;
   text-align: left;
   color: #254E70; }
+  @media screen and (max-width: 1001px) {
+    .tag-title {
+      padding-left: 0.7em;
+      padding-right: 0.7em; } }
 
 .post-wrapper {
   display: flex;
@@ -280,7 +285,7 @@ h3 {
         .post-excerpt .top-tags .tag {
           margin-right: 0.7em;
           margin-top: 0.2em;
-          border: 2px solid #254E70;
+          border: 1px solid #254E70;
           font-size: 1.1em; } }
 
 .pagination {

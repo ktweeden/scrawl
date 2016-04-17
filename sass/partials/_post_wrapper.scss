@@ -7,7 +7,20 @@
     order: 1;
     width: 100%;
   }
+  .commenting-wrapper {
+    order: 5;
+    max-width: 1000px;
+    align-self: center;
+    width: 100%;
 
+    @include mq-phone {
+      padding: $small-padding $medium-padding;
+    };
+
+    @include mq-not-phone {
+      padding: $small-padding 2em;
+    };
+  }
   .tag-wrapper {
     order: 3;
     width: 100%;
@@ -38,7 +51,7 @@
   }
 
   .footer-wrapper {
-    order: 5;
+    order: 6;
     width: 100%;
     align-self: flex-end;
   }

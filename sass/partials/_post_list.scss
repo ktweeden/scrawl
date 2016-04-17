@@ -1,8 +1,14 @@
 .tag-title {
   text-transform: uppercase;
-  padding: $medium-padding;
+  padding-top: $medium-padding*2;
+  padding-bottom: $medium-padding;
   text-align: left;
   color: $secondary-colour;
+
+  @include mq-not-desktop {
+    padding-left: $medium-padding;
+    padding-right: $medium-padding;
+  };
 }
 
 .post-wrapper {
@@ -261,7 +267,7 @@
       @include mq-desktop {
         margin-right: $medium-padding;
         margin-top: $small-padding;
-        border: 2px solid $secondary-colour;
+        border: 1px solid $secondary-colour;
         font-size: 1.1em;
       };
 
