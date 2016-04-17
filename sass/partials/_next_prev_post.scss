@@ -11,6 +11,7 @@
     flex-direction: row;
     padding-bottom: $small-padding;
     text-align: left;
+
   }
 
   .next-post {
@@ -27,6 +28,7 @@
     color: $secondary-colour;
     text-transform: uppercase;
     font-size: $small-header;
+
 
     @include mq-phone {
       padding: $medium-padding 0;

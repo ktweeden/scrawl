@@ -10,5 +10,13 @@
     text-align: center;
     color: $tertiary-colour;
     border: 1px solid $tertiary-colour;
+
+    @include mq-desktop {
+      &:hover {
+        color: $secondary-colour;
+        border-color: $secondary-colour;
+        transition: 0.2s;
+      }
+    };
   }
 }

@@ -18,6 +18,14 @@
     padding: $small-padding;
     margin: $small-padding;
 
+    @include mq-desktop {
+      &:hover {
+        color: $background-colour;
+        border-color: $background-colour;
+        transition: 0.2s;
+      }
+    };
+
     &.hidden {
       display: none;
     }

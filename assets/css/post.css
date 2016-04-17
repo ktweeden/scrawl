@@ -60,6 +60,10 @@ h3 {
     color: #254E70;
     list-style-type: none;
     margin: 0.2em; }
+    @media screen and (min-width: 1001px) {
+      .navigation-container li:hover {
+        color: #FFBF00;
+        transition: 0.2s; } }
 
 .blog-title-background {
   background-color: #FFBF00;
@@ -116,6 +120,11 @@ h3 {
     text-align: center;
     color: #FF4B3E;
     border: 1px solid #FF4B3E; }
+    @media screen and (min-width: 1001px) {
+      .tag-container .tag:hover {
+        color: #254E70;
+        border-color: #254E70;
+        transition: 0.2s; } }
 
 .footer-container {
   background-color: #254E70;
@@ -135,6 +144,11 @@ h3 {
     color: #FFBF00;
     padding: 0.2em;
     margin: 0.2em; }
+    @media screen and (min-width: 1001px) {
+      .footer-container .social-button:hover {
+        color: #EFEFEF;
+        border-color: #EFEFEF;
+        transition: 0.2s; } }
     .footer-container .social-button.hidden {
       display: none; }
 

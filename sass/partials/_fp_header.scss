@@ -33,5 +33,12 @@
     color: $secondary-colour;
     list-style-type: none;
     margin: $small-padding;
+
+    @include mq-desktop {
+      &:hover {
+        color: $primary-colour;
+        transition: 0.2s;
+      }
+    };
   }
 }

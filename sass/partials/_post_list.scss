@@ -57,7 +57,7 @@
 
 .excerpt-image {
   background-position: center;
-  
+
   @include mq-phone {
     display: none;
   };
@@ -127,8 +127,6 @@
       width: 100%;
       font-family: 'Permanent Marker', Impact, Charcoal, sans-serif;
     };
-
-
 
   }
 
@@ -271,6 +269,12 @@
         margin-top: $small-padding;
         border: 1px solid $secondary-colour;
         font-size: 1.1em;
+
+          &:hover {
+            color: $primary-colour;
+            border-color: $primary-colour;
+            transition: 0.2s;
+          }
       };
 
     }

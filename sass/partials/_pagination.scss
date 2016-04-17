@@ -37,6 +37,13 @@
       &.newer-posts {
         text-align: right;
       }
+
+      @include mq-desktop {
+        &:hover {
+          color: $primary-colour;
+          transition: 0.2s;
+        }
+      };
     }
   }
 
