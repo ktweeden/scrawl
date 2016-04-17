@@ -1,4 +1,7 @@
 #Scrawl: A fully responsive theme for Ghost
+
+![Scrawl on a tablet](https://dl.dropboxusercontent.com/s/xhdbn5q9o8k7nnd/scrawlCoverImage.png?dl=0)
+
 Features include:
 
 * Fully responsive, mobile first design
@@ -33,7 +36,9 @@ For example, if I wanted to add a link to my twitter profile to a blog using scr
 
 `<script>window.__themeCfg.twitterUsername = 'ktweeden';<script>`
 
-in the blog header box on the code injection tab of the blog's admin interface.
+---
+
+Copy and paste the relevant links to the blog header code injection box:
 
 bitbucket: `<script>window.__themeCfg.bitbucketUsername = '...';</script>`
 
@@ -56,11 +61,12 @@ vine: `<script>window.__themeCfg.vineUsername = '...';<script>`
 youtube: `<script>window.__themeCfg.youtubeUsername = '...';<script>`
 
 ###Disqus
-Scrawl comes with [Disqus](https://www.disquss.com) as a way for you to add commenting to your blog.
+Scrawl comes with the [Disqus](https://www.disquss.com) commenting platform so that you can easily manage interactions with your readers.
 
-If you want to enable commenting, first make sure that you have an account on Disqus. You then need to create a "channel" for your blog using Disqus's website. This channel will hold all of the comments for your blog.
-
-When you have created your channel, copy the following code into the blog header box in the code injection tab on your blog's admin interface, replacing ... with your channel's name (no spaces!).
+To enable commenting:
+* make sure that you have an account on Disqus.
+* Create a "channel" for your blog using Disqus's website. This channel will hold all of the comments for your blog.
+* Copy the following code into the blog header code injection, replacing ... with your channel's name (no spaces!).
 
 `<script>window.__themeCfg.disqusUsername = '...';</script>`
 
