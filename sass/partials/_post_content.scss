@@ -50,7 +50,7 @@
     }
 
   mark {
-    background-color: $tertiary-colour;
+    background-color: $primary-colour;
   }
 
   del {
@@ -59,6 +59,19 @@
 
   hr {
     border-top:2px solid $tertiary-colour;
+  }
+
+  code {
+    color: $tertiary-colour;
+    text-align: center;
+    padding: $small-padding;
+  }
+
+  pre {
+    code {
+      border: none;
+      font-size: 1em;
+    }
   }
 
 }
