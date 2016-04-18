@@ -80,7 +80,7 @@ Enough talk, here are some pictures.
 ###Post
 ![Scrawl post example](https://dl.dropboxusercontent.com/s/62ia4v64y298mh1/A%20long%20article%20example.png?dl=0)
 
-![Scraw formatting](https://dl.dropboxusercontent.com/s/sszi74h0qzpvtmw/scrawlPostFull.jpg?dl=0)
+![Scraw formatting](https://dl.dropboxusercontent.com/s/apkw7s3e96zu08m/Scrawls%20formatting.png?dl=0)
 
 ###Tablet
 ![Scrawl home page example](https://dl.dropboxusercontent.com/s/ew5skbpisd2gra3/scrawlTabletIndex.png?dl=0)
