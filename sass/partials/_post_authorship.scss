@@ -10,6 +10,7 @@
     height: 45px;
     background-size: cover;
     order: 1;
+    padding-left: $small-padding;
   }
 
 
@@ -21,11 +22,9 @@
     display: flex;
     flex-direction: column;
     order: 2;
-    padding-left: $medium-padding;
 
     .author-name {
       order: 1;
-      padding-left: $small-padding;
       color: $tertiary-colour;
 
     }

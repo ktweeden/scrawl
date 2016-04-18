@@ -11,7 +11,7 @@ function readingTime (bodyString) {
 function populateReadingTime () {
   $(".content-string").each(function(){
     var time = readingTime($(this).text());
-    $(this).parent().text(time);
+    $(this).parent().html(time);
   });
 }
 

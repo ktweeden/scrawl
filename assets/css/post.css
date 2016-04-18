@@ -288,17 +288,16 @@ h3 {
     width: 45px;
     height: 45px;
     background-size: cover;
-    order: 1; }
+    order: 1;
+    padding-left: 0.2em; }
   .authorship a {
     border: 0px; }
   .authorship .name-date {
     display: flex;
     flex-direction: column;
-    order: 2;
-    padding-left: 0.7em; }
+    order: 2; }
     .authorship .name-date .author-name {
       order: 1;
-      padding-left: 0.2em;
       color: #FF4B3E; }
     .authorship .name-date .post-date {
       order: 2; }
