@@ -16,8 +16,8 @@
       <h1 class="project-name">Scrawl</h1>
       <h2 class="project-tagline">A fully responsive ghost theme</h2>
       <a href="https://github.com/ktweeden/scrawl" class="btn">View on GitHub</a>
-      <a href="https://github.com/ktweeden/scrawl/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/ktweeden/scrawl/tarball/master" class="btn">Download .tar.gz</a>
+      <a href="https://github.com/ktweeden/scrawl/zipball/master" class="btn download">Download .zip</a>
+      <a href="https://github.com/ktweeden/scrawl/tarball/master" class="btn download">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
@@ -50,13 +50,13 @@
         </h2>
 
         <p>Get the .zip file for the latest version
-          <a href="https://github.com/ktweeden/scrawl/archive/master.zip">here</a>.
+          <a class="download" href="https://github.com/ktweeden/scrawl/archive/master.zip">here</a>.
         </p>
 
         <p>Ghost(Pro) users can upload this
-          <a href="https://github.com/ktweeden/scrawl/archive/master.zip">.zip</a> file via the Pro dashboard. See the
+          <a class="download" href="https://github.com/ktweeden/scrawl/archive/master.zip">.zip</a> file via the Pro dashboard. See the
           <a href="http://support.ghost.org/upload-theme-ghostpro/">official guide</a>.
-          Self-hosted Ghost users should upload the <a href="https://github.com/ktweeden/scrawl/archive/master.zip">.zip</a> file to Ghost's
+          Self-hosted Ghost users should upload the <a class="download" href="https://github.com/ktweeden/scrawl/archive/master.zip">.zip</a> file to Ghost's
           <code>content/themes/</code> directory and extract it with
           <code>unzip -o scrawl-master.zip</code>
         </p>
@@ -191,7 +191,12 @@
 
         ga('create', 'UA-69292454-2', 'auto');
         ga('send', 'pageview');
-
+        function bindDownloadEvent () {
+          $('.download').click(function (){
+            ga('send', 'event', 'interaction', 'click', '.zip download');
+          });
+        }
+        $(bindDownloadEvent);
       </script>
   </body>
 </html>
