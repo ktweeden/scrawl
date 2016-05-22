@@ -42,23 +42,23 @@ Copy and paste the relevant links to the blog header code injection box:
 
 bitbucket: `<script>window.__themeCfg.bitbucketUsername = '...';</script>`
 
-codepen: `<script>window.__themeCfg.codepenUsername = '...';<script>`
+codepen: `<script>window.__themeCfg.codepenUsername = '...';</script>`
 
-facebook: `<script>window.__themeCfg.facebookUsername = '...';<script>`
+facebook: `<script>window.__themeCfg.facebookUsername = '...';</script>`
 
-github: `<script>window.__themeCfg.githubUsername = '...';<script>`
+github: `<script>window.__themeCfg.githubUsername = '...';</script>`
 
-instagram: `<script>window.__themeCfg.instagramUsername = '...';<script>`
+instagram: `<script>window.__themeCfg.instagramUsername = '...';</script>`
 
-pinterest: `<script>window.__themeCfg.pinterestUsername = '...';<script>`
+pinterest: `<script>window.__themeCfg.pinterestUsername = '...';</script>`
 
-tumblr: `<script>window.__themeCfg.tumblrUsername = '...';<script>`
+tumblr: `<script>window.__themeCfg.tumblrUsername = '...';</script>`
 
-twitter: `<script>window.__themeCfg.twitterUsername = '...';<script>`
+twitter: `<script>window.__themeCfg.twitterUsername = '...';</script>`
 
-vine: `<script>window.__themeCfg.vineUsername = '...';<script>`
+vine: `<script>window.__themeCfg.vineUsername = '...';</script>`
 
-youtube: `<script>window.__themeCfg.youtubeUsername = '...';<script>`
+youtube: `<script>window.__themeCfg.youtubeUsername = '...';</script>`
 
 ###Disqus
 Scrawl comes with the [Disqus](https://www.disquss.com) commenting platform so that you can easily manage interactions with your readers.
