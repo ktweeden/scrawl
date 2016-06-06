@@ -6,8 +6,6 @@
   align-self: flex-end;
 
   .social-button {
-    height: 48px;
-    width: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +13,7 @@
     background-color: inherit;
     font-size: 2em;
     color: $primary-colour;
-    padding: $small-padding;
+    padding: 0.1em;
     margin: $small-padding;
 
     @include mq-desktop {

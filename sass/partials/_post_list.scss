@@ -142,7 +142,7 @@
 
     @include mq-desktop {
       order: 2;
-      width: 100%;
+      min-width: 100%;
     };
   }
 
