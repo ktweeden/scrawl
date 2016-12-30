@@ -226,7 +226,7 @@ h3 {
     width: 100%;
     height: 100%;
     margin: 0.7em 0; }
-  .content-wrapper li {
+  .content-wrapper ul li {
     list-style-type: circle; }
   .content-wrapper mark {
     background-color: #FFBF00; }
@@ -415,5 +415,4 @@ h3 {
     @media screen and (min-width: 551px) {
       .next-post-wrapper a {
         padding-top: 0.7em; } }
-
 /*# sourceMappingURL=post.css.map */
