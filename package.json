@@ -11,5 +11,9 @@
     "blog",
     "ghost",
     "theme"
-  ]
+  ],
+  "scripts":{
+    "watch-css":"sass --watch sass:assets/css",
+    "postcss":"postcss -r --use autoprefixer assets/css/index.css && postcss -r --use autoprefixer assets/css/post.css"
+  }
 }
